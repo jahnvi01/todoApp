@@ -1,0 +1,26 @@
+
+<html>
+
+ <head>
+  
+<link href="/style.css" rel="stylesheet">
+    </head>
+<body>
+<form>
+<input type="text" id="item" name="item" placeholder="add item" required />
+<button type="submit" onclick="getitem()">add</button>
+    </form>
+    <ul id="data">
+<%todos.forEach(item=>{%>
+
+<li onclick="change(event)"><%=item.item %></li>
+<%
+})
+
+%>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/script.js"></script>
+    </body>
+
+    </html>
